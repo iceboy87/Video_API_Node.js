@@ -20,6 +20,7 @@ app.use("/api/videos", videoRoutes);
 // DB + Server
 connectDB().then(() => {
   app.listen(PORT, () => {
-    console.log(`🚀 Server running at https://localhost:${PORT>
+    console.log("🚀 Server running at https://localhost:${PORT}");
   });
 });
+
